@@ -5,20 +5,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movies Website</title>
+    <title>Responsive Movie Website</title>
+    <!-- fav-icon link -->
+    <link rel="icon" type="image/x-icon" href="./img/fav-icon.png">
+    <!-- style css link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- link Swiper -->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <!-- font icon script -->
+    <script src="https://kit.fontawesome.com/3988e44910.js" crossorigin="anonymous"></script>
+    <!-- google font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="https://flyclipart.com/thumb2/film-media-wifi-icon-with-png-and-vector-format-for-free-757536.png" width="100%">
-    <link rel="stylesheet" href="style.css">
+    <!-- box icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-    <header></header>
-    <main></main>
+    <!-- header section -->
+    <header>
+        <!-- nav  -->
+        <div class="nav container">
+            <!-- logo -->
+            <a href="index.html" class="logo">Movie<span>Vel</span></a>
+            <!-- search-box -->
+            <div class="search-box">
+                <input type="search" name="" id="search-input" placeholder="Search Movie">
+                <i class='bx bx-search'></i>
+            </div>
+            <!-- user -->
+            <a href="#" class="user">
+                <img src="img/user.jpg" alt="user" class="user-img">
+            </a>
+            <!-- navBar -->
+            <div class="navBar">
+                <a href="#home" class="nav-link nav-active">
+                    <i class='bx bx-home'></i>
+                    <span class="nav-link-tittle">Home</span>
+                </a>
+                <a href="#Home" class="nav-link">
+                    <i class='bx bxs-hot'></i>
+                    <span class="nav-link-tittle">Trending</span>
+                </a>
+                <a href="#Home" class="nav-link">
+                    <i class='bx bx-compass'></i>
+                    <span class="nav-link-tittle">Explore</span>
+                </a>
+                <a href="#Home" class="nav-link">
+                    <i class='bx bx-tv'></i>
+                    <span class="nav-link-tittle">Movies</span>
+                </a>
+                <a href="#Home" class="nav-link">
+                    <i class='bx bx-heart'></i>
+                    <span class="nav-link-tittle">Favourite</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- home section -->
+        <section class="home container" id="home">
+            <!-- home img -->
+            <img src="./img/home-background.png" alt="home" class="home-img">
+            <!-- home text -->
+            <div class="home-text">
+                <h1 class="home-tittle">Hitman's Wife's <br>Bodyguard</h1>
+                <p>Releasing 10 April</p>
+                <a href="#" class="watch-btn">
+                    <i class='bx bx-right-arrow'></i>
+                    <span>Watch the tariler</span>
+                </a>
+            </div>
+        </section>
+        <!-- Popular Section  -->
+        <section class="popular container" id="popular">
+            <!-- heading -->
+            <div class="heading">
+                <h2 class="heading-title">Popular Movies</h2>
+            </div>
+            <!-- content -->
+            <div class="popular-content swiper">
+                <div class="swiper-wrapper">
+                    <!-- Movies Box 1 -->
+                    <div class="swiper-slide">
+                        <div class="movie-box">
+                            <img src="img/popular-movie-1.jpg" alt="" class="movie-box-img">
+                            <div class="box-text">
+                                <h2 class="movie-title">Spider Man : Now Way Home</h2>
+                                <span class="movie-type">Action</span>
+                                <a href="#" class="watch-btn play-btn">
+                                    <i class='bx bx-right-arrow'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+    </main>
     <footer></footer>
-    <script src="App.js"></script>
-
 </body>
 
 </html>
